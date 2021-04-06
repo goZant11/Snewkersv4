@@ -1,0 +1,294 @@
+
+/*================= Estilos generales =================*/
+
+/* html, body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+} */
+
+
+
+/*================= Nav =================*/
+
+.navbar {
+    text-transform: uppercase;
+    box-shadow: 0 .1rem .1rem rgb(162, 164, 167);
+}
+
+/* El hijo de navbar brand que es una imagen se le de ese tamaño */
+.navbar-brand img{
+    width: 40px;
+}
+
+/* Todos los elementos que tengan la clase active dentro de la clase navbar main tendrar eso */
+.navbar-main .active{
+    /* una linea debajo con forma de wave y morada */
+    text-decoration: underline wavy #800080;
+    text-underline-offset: 9px;
+}
+
+
+
+/*================= Carrusel =================*/
+
+/* Cortar la imagen */
+.carousel-height {
+    max-height: 40rem!important;
+}  
+
+/* Cambiar la velocidad de transición */
+/* .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    transition: transform 1.2s ease;
+} */
+
+/* Cambiar tamaño de botones */
+.carousel-indicators li {
+    width: 40px;
+    height: 6px;
+    margin: 5px;
+    margin-right: 4px;
+    margin-left: 4px;
+} 
+
+.carousel-caption{
+    top: 150px;
+}
+
+
+/*================= Ribbon =================*/
+
+#ribbon{
+    background-color: rgb(248, 248, 248);
+    background-image: repeating-linear-gradient(45deg,transparent,transparent 25px,rgb(255, 255, 255) 25px,rgb(255, 255, 255) 40px) 
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px ;        
+}
+
+#tarjeta{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(187, 185, 187);
+}
+
+.textshadow{
+    text-shadow: 0 6px 6px rgb(0, 0, 0)
+}
+
+
+/*================= TARJETAS HYPE =================*/
+
+/* Color de fondo */
+#facilities{
+    background-color: #f8f8f8;
+    padding: 30px 0px;
+}
+
+/* Sombras del body */
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+
+/* Margen de cartas */
+.card {
+    margin: 20px 10px;
+}
+
+.cardborder{
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.cardborder:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 5px rgba(36, 36, 36, 0.2);
+}
+
+
+
+
+                    /*================= QUIENES SOMOS =================*/
+
+/*================= BACKGROUND =================*/
+
+.bg-about{
+    background-image: url(../img/atletas.jpg);
+    height: 100vh;
+    margin: 0px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.bg-parrafo{
+    margin-top: 20px;
+}
+
+.bg-boton{
+    vertical-align: -10px;
+}
+
+/*================= ABOUT =================*/
+
+/* .about-section{
+    background: url(../img/modelozapatilla.jpg);
+    background-size: cover;
+    background-color: #fdfdfd;
+    overflow-x: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: black;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: auto;
+        padding: 100px-40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        width: 100%;
+    }
+} */
+
+
+/* https://www.youtube.com/watch?v=FWQir0ZfAJI */
+.slideshow{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    
+}
+
+
+.slideshow-item img{
+    width: 100%;
+    height: 97.5%;
+    object-fit: cover;
+    
+}
+
+/*  */
+.slideshow-item-text{ 
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0, .8);
+    color: #fff;
+    padding: 10rem 5rem;
+}
+
+/*  */
+.slideshow-item-text h5{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+    text-align:center;
+}
+
+/*  */
+.slideshow-item-text p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+/* Responsive */
+
+@media screen and (max-width:1000px){
+    .slideshow-item-text{
+        max-width: 70%;
+        padding: 10rem 5rem;
+    }
+
+    .slideshow-item-text h5{
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .slideshow-item-text{
+        max-width: 100%;
+        padding: 2rem;
+        top: initial;
+        bottom: 0;
+        transform: initial;
+    }
+
+    .slideshow-item-text h5{
+        font-size: 23px;
+    }
+
+    .slideshow-item-text p{
+        font-size: 18px;
+    }
+}
